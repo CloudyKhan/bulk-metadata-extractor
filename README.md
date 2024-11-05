@@ -1,6 +1,6 @@
 # Bulk Metadata Extractor
 
-`bulk-metadata-extractor.sh` is a shell script that automates metadata extraction for all files in a specified directory. This script uses [ExifTool](https://exiftool.org/) to extract metadata and allows you to save the results to an output file.
+`auto-extract.sh` is a shell script that automates metadata extraction for all files in a specified directory. This script uses [ExifTool](https://exiftool.org/) to extract metadata and allows you to save the results to an output file.
 
 ## Requirements
 
@@ -17,7 +17,7 @@
 ## Usage
 
 ```bash
-./bulk-metadata-extractor.sh [-d directory] [-o output_file]
+./auto-extract.sh [-d directory] [-o output_file]
 ```
 
 ### Options
@@ -31,14 +31,14 @@
 Extract metadata from all files in the `downloaded_files` directory and print results directly to the terminal.
 
 ```bash
-./bulk-metadata-extractor.sh -d ~/path/to/downloaded_files
+./auto-extract.sh -d ~/path/to/downloaded_files
 ```
 
 #### Example 2: Extract Metadata and Save to an Output File
 Extract metadata from all files in the `downloaded_files` directory and save the results to `metadata_output.txt`.
 
 ```bash
-./bulk-metadata-extractor.sh -d ~/path/to/downloaded_files -o metadata_output.txt -w
+./auto-extract.sh -d ~/path/to/downloaded_files -o metadata_output.txt -w
 ```
 
 ## Script Workflow
