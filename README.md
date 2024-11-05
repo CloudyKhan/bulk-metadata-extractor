@@ -2,6 +2,15 @@
 
 `auto-extract.sh` is a shell script that automates metadata extraction for all files in a specified directory. This script uses [ExifTool](https://exiftool.org/) to extract metadata and allows you to save the results to an output file.
 
+## Getting Started
+
+To download this script, clone the repository:
+
+```bash
+git clone https://github.com/CloudyKhan/auto-harvest.git
+cd auto-harvest
+```
+
 ## Requirements
 
 - **ExifTool**: Ensure ExifTool is installed on your system.
@@ -17,17 +26,18 @@
 ## Usage
 
 ```bash
-./auto-extract.sh [-d directory] [-o output_file]
+./auto-extract.sh [-d directory] [-o output_file] [-w]
 ```
 
 ### Options
-- `-d`: Specifies the directory containing files for metadata extraction. If not specified, the current directory is used by default.
-- `-o`: Specifies the name of the output file for saving extracted metadata. If not provided, metadata is displayed directly in the terminal.
-- `-w`: Specifies the creation of a text file containing a list of the document Creators/authors. 
+
+- **`-d`**: Specifies the directory containing files for metadata extraction. If not specified, the current directory is used by default.
+- **`-o`**: Specifies the name of the output file for saving extracted metadata. If not provided, metadata is displayed directly in the terminal.
+- **`-w`**: Specifies the creation of a text file containing a list of the document creators/authors.
 
 ### Examples
 
-#### Example: Extract Metadata from Files in a Specific Directory and Display in Terminal
+#### Example 1: Extract Metadata from Files in a Specific Directory and Display in Terminal
 Extract metadata from all files in the `downloaded_files` directory and print results directly to the terminal.
 
 ```bash
@@ -50,5 +60,6 @@ Extract metadata from all files in the `downloaded_files` directory and save the
    - If no output file is specified, metadata is printed directly in the terminal.
 
 ## Notes
+
 - The script processes all files in the specified directory. Ensure only the files you want to analyze are present in the directory.
 - This script is compatible with any file type supported by ExifTool.
