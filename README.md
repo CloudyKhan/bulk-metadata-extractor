@@ -23,6 +23,7 @@
 ### Options
 - `-d`: Specifies the directory containing files for metadata extraction. If not specified, the current directory is used by default.
 - `-o`: Specifies the name of the output file for saving extracted metadata. If not provided, metadata is displayed directly in the terminal.
+- `-w`: Specifies the creation of a text file containing a list of the document Creators/authors. 
 
 ### Examples
 
@@ -37,7 +38,7 @@ Extract metadata from all files in the `downloaded_files` directory and print re
 Extract metadata from all files in the `downloaded_files` directory and save the results to `metadata_output.txt`.
 
 ```bash
-./bulk-metadata-extractor.sh -d ~/path/to/downloaded_files -o metadata_output.txt
+./bulk-metadata-extractor.sh -d ~/path/to/downloaded_files -o metadata_output.txt -w
 ```
 
 ## Script Workflow
